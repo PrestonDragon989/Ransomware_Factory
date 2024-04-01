@@ -13,7 +13,11 @@ The Factory can make code based on the following options:
 8. Encryption Depth
 9. Decryption Type
 10. Hide File
-
+It also takes:
+- File Name
+- Project Name
+- Any Message Info
+- Email Info if needed
 It will then take that code, and then put it into a folder for you. Lets dive into each of the 10 options, to see what you can do.
 1. ### Key Method
    The key method can be Fernet, Secrets, or Custom. Each one is just a way to generate a 32 byte URL safe key. They all work with the encryption methods, they are just there for preference.
