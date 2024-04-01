@@ -83,3 +83,5 @@ The `#f0e6e6` is the background color, and the last thing `#281e1e` is the text 
 
 ## Have Fun!
 I made this as a project to learn my python, and to have fun! I hope you enjoy the product! It may receive updates in the future, it may not. If this repo gets a ton of traiffic, it most likely will. If you like it, and want to add to it (or make it worse), feel free to clone it or make a pull request! Have fun, and don't do anything illegal! :)
+> [!TIP]
+> If your looking to have a bit of fun, then you should know that each file created has its own personality. If you look at the beginning of the code that the factory creates, you can see that it has some stats and data for fun!
