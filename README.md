@@ -55,14 +55,14 @@ It will then take that code, and then put it into a folder for you. Lets dive in
     If you enable this, it will attempt to hide itself based on the OS. If it is a Windows OS, then it will try and change it's own permissions. If it is on a Unix based OS, it will add a "." to the beginning of it's name. They can still both be found, but they are a little hidden. It will try to do this after saving the key.
 
 ## Where do the Created Files Apear?
-If you are running the python files, it will apear in the folder, under the Project Name you gave it. It will be mingling with the other files, so remember what you named it! If you are runnning the Ubuntu version, it should still apear right next to it.
+If you are running the python files, it will **apear in the folder, under the Project Name** you gave it. It will be mingling with the other files, so remember what you named it! If you are runnning the Ubuntu version, it should still apear right next to it.
 
 ## What is Currently Supported?
-It now currently Supports an executable for Ubuntu, and the base Python code. There is instructions on how to install it here in the README, and all it takes is python.
+It now currently Supports an executable for **Ubuntu**, and the base **Python** code. There is instructions on how to install it here in the README, and all it takes is python. Python code is in the `Python` folder, and the Ubunutu Version is in the `Ubuntu` folder.
 > [!NOTE]
 > While there may only be an executable for Ubuntu, its very easy to set up! Even Jonas could do it! (Inside Joke)
 ## How to Install it with Python?
-The factory is bulit soley in Python, and doesn't really use any modules outside of the already included ones. The GUI itself is built with tkinter! The only outside modules used can even be avoided! The two others include: `pyinstaller`, `cryptography`. Pyinstaller is used for the conversion to .exe, and cryptography is used for all scripts that use AES encryption. As long as you have python installed, you will be able to make quite a bit of ransomwares without those two. To get them, all you have to do is go to your command line/terminal, and navigate to the projects directory. Once your there, you can run the following command:
+The factory is bulit solely in Python, and doesn't really use any modules outside of the already included ones. You can find all of the files in the `Python` folder of this repo. The GUI itself is built with tkinter! The only outside modules used can even be avoided! The two others include: `pyinstaller`, `cryptography`. Pyinstaller is used for the conversion to .exe, and cryptography is used for all scripts that use AES encryption. As long as you have python installed, you will be able to make quite a bit of ransomwares without those two. To get them, all you have to do is go to your command line/terminal, and navigate to the projects directory. Once your there, you can run the following command:
 ```console
 pip3 install -r requirements.txt
 ```
@@ -79,4 +79,7 @@ Some people may not like the colors of the factory (I'm not sure if I even like 
 ```
 The `#f0e6e6` is the background color, and the last thing `#281e1e` is the text color. You can replace these to change the colors, but they have to be in hex codes. This will change most of the colors in the factory.
 > [!IMPORTANT]
-> Make sure to put the new hex codes inbetween the ' ', so it works properly! 
+> Make sure to put the new hex codes **inbetween** the ' ', so it works properly!
+
+## Have Fun!
+I made this as a project to learn my python, and to have fun! I hope you enjoy the product! It may receive updates in the future, it may not. If this repo gets a ton of traiffic, it most likely will. If you like it, and want to add to it (or make it worse), feel free to clone it or make a pull request! Have fun, and don't do anything illegal! :)
