@@ -1,5 +1,8 @@
 # Ransomware Factory!
 The Ransomware Factory is a ✨Magical✨ tool, that produces ransomware based on options you decide in the GUI. It has many options that include: key generation, key storage, self destruction, messages, & and much more! that being said, it should only be used FOR LEARNING, and never illegally!! It can show you a lot of things about basic ransomware. The ransomware made is semi-basic depending on how you build it. It can range from hardly ransomware, to completely functional.
+> [!CAUTION]
+> Be very careful with all of the code it produces, it may be made simply, but it is still MALWARE
+
 
 ## What can it do?
 The Factory can make code based on the following options:
@@ -13,11 +16,14 @@ The Factory can make code based on the following options:
 8. Encryption Depth
 9. Decryption Type
 10. Hide File
+
 It also takes:
+
 - File Name
 - Project Name
 - Any Message Info
 - Email Info if needed
+
 It will then take that code, and then put it into a folder for you. Lets dive into each of the 10 options, to see what you can do.
 1. ### Key Method
    The key method can be Fernet, Secrets, or Custom. Each one is just a way to generate a 32 byte URL safe key. They all work with the encryption methods, they are just there for preference.
@@ -53,9 +59,10 @@ If you are running the python files, it will apear in the folder, under the Proj
 
 ## What is Currently Supported?
 It now currently Supports an executable for Ubuntu, and the base Python code. There is instructions on how to install it here in the README, and all it takes is python.
-
+> [!NOTE]
+> While there may only be an executable for Ubuntu, its very easy to set up! Even Jonas could do it! (Inside Joke)
 ## How to Install it with Python?
-The factory is bulit soley in Python, and doesn't really use any modules outside of the already included ones. The GUI itself is built with tkinter! The only outside modules used can even be avoided! The two others include: pyinstaller, cryptography. Pyinstaller is used for the conversion to .exe, and cryptography is used for all scripts that use AES encryption. As long as you have python installed, you will be able to make quite a bit of ransomwares without those two. To get them, all you have to do is go to your command line/terminal, and navigate to the projects directory. Once your there, you can run the following command:
+The factory is bulit soley in Python, and doesn't really use any modules outside of the already included ones. The GUI itself is built with tkinter! The only outside modules used can even be avoided! The two others include: `pyinstaller`, `cryptography`. Pyinstaller is used for the conversion to .exe, and cryptography is used for all scripts that use AES encryption. As long as you have python installed, you will be able to make quite a bit of ransomwares without those two. To get them, all you have to do is go to your command line/terminal, and navigate to the projects directory. Once your there, you can run the following command:
 ```console
 pip3 install -r requirements.txt
 ```
@@ -64,3 +71,12 @@ This will install those two modules for you! How fun! Then, to start the program
 python3 main.py
 ```
 This will start the program. All you have to do is run main.py, and boom! You've got the factory! Thats how to run it from the base code. From there, it can do the rest!
+
+## Can I change the colors?
+Some people may not like the colors of the factory (I'm not sure if I even like it), so you can change it, in a semi simple way! You have to edit the file `main.py`. All you have to do, is go to the very bottom of the file, and the <b>second to last line</b> of code is what you want to edit. It looks like this:
+```python
+	app = App(sys.argv[0], '1000', '650', '#f0e6e6', '#281e1e')
+```
+The `#f0e6e6` is the background color, and the last thing `#281e1e` is the text color. You can replace these to change the colors, but they have to be in hex codes. This will change most of the colors in the factory.
+> [!IMPORTANT]
+> Make sure to put the new hex codes inbetween the ' ', so it works properly! 
